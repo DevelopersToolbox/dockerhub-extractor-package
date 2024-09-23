@@ -203,7 +203,7 @@ jobs:
         run: pip install pytest pytest-mock
 
       - name: Run Pytest
-        run: pytest --no-header -vv
+        run: pytest --no-header -vv -W always
 
   cicd-pipeline:
     if: always()
